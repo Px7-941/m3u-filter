@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="UnitTest" tvg-logo="http://localhost/unittest" group-title="UnitTest-Group",UnitTest
+http://localhost/unittest
+#EXTINF:-1 tvg-id="Bar" tvg-name="FooBar" tvg-logo="http://localhost/foobar.png" group-title="FooBar-Group",FooBar
+http://localhost/foobar
+#EXTINF:-1 tvg-id="Foo" tvg-name="UnitTest HD" tvg-logo="http://localhost/unittest-hd.png" group-title="Bar-Group",UnitTest HD
+http://localhost/unittest-hd

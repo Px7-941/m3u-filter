@@ -1,0 +1,29 @@
+{
+    "name": "px7-941/m3u-filter",
+    "description": "m3u playlist parser/generator",
+    "keywords": ["m3u", "m3u8", "playlist"],
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Px7-941"
+        }
+    ],
+    "require": {
+        "gemorroj/m3u-parser": "^5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "M3uFilter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "M3uFilter\\Tests\\": "tests/"
+        }
+    }
+}
