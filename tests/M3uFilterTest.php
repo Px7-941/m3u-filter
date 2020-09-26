@@ -18,7 +18,9 @@ class M3uFilterTest extends TestCase
         $M3uFilter = new M3uFilter();
         $data = $M3uFilter->parseFile(__DIR__.'/fixtures/simple.m3u');
         $data = $M3uFilter->filterByExtInfTags($data, $filter);
-        self::assertEquals('UnitTest-Group', $data[0]->getExtTags()[0]->getAttribute('group-title'));
         self::assertEquals(1, \count($data));
+        self::assertEquals('http://localhost/unittest', $data[0]->getPath());
+        self::assertEquals('UnitTest', $data[0]->getExtTags()[0]->getTitle());
+        self::assertEquals('UnitTest-Group', $data[0]->getExtTags()[0]->getAttribute('group-title'));
     }
 }
